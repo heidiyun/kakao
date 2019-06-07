@@ -4,11 +4,11 @@ module.exports = {
     disableHostCheck: true
   },
 
-  publicPath: undefined,
+  publicPath: 'kakao-talk',
   outputDir: undefined,
   assetsDir: undefined,
   runtimeCompiler: true,
   productionSourceMap: undefined,
   parallel: undefined,
-  css: undefined,
+  css: undefined
 };
