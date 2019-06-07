@@ -1,3 +1,4 @@
+Kakao Chatting View.
 # kakao
 
 ## Project setup
