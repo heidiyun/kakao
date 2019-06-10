@@ -1,6 +1,6 @@
 .container {
   background: #666666;
-  height: 700px;
+  height: calc(100vh - 20px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,15 +17,18 @@
       .blank {
         height: 35px;
       }
+
       .user-info {
         display: flex;
         padding-left: 15px;
+
         .profile-photo {
           width: 45px;
           height: 45px;
           background: #ff384f;
           border-radius: 17px;
         }
+
         .user-name {
           padding-left: 9px;
         }
@@ -45,9 +48,11 @@
 
         &[type='sender'] {
           flex-direction: row-reverse;
+
           .profile-photo {
             display: none;
           }
+
           .chat-info {
             .user-name {
               display: none;
@@ -56,12 +61,14 @@
             .message {
               flex-direction: row-reverse;
               padding-right: 7px;
+
               .message-content {
                 background: rgb(255, 228, 2);
                 max-width: 300px;
                 word-break: break-all;
                 text-align: left;
               }
+
               .send-time {
                 padding-right: 5px;
               }
@@ -83,6 +90,7 @@
           background: #ff384f;
           border-radius: 13px;
         }
+
         .chat-info {
           .user-name {
             text-align: left;
@@ -90,10 +98,12 @@
             font-size: 13px;
             color: #333333;
           }
+
           .message {
             padding-top: 5px;
 
             display: flex;
+
             .message-content {
               background: #ffffff;
               width: fit-content;
@@ -102,6 +112,7 @@
               border-radius: 4px;
               font-size: 13px;
             }
+
             .send-time {
               padding-left: 5px;
               align-self: flex-end;
@@ -126,10 +137,12 @@
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         display: flex;
+
         .input-content {
           width: 310px;
           border: none;
           resize: none;
+
           &:active,
           &:focus {
             outline: none;
@@ -148,6 +161,7 @@
           text-emphasis: center;
           line-height: 70px;
           font-size: 14px;
+
           &[clickable] {
             background: rgb(255, 228, 2);
             color: #000000;
